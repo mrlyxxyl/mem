@@ -11,7 +11,7 @@ public class XMemCacheTest {
 
     static {
         try {
-            MemcachedClientBuilder builder = new XMemcachedClientBuilder("192.168.1.200:11211 192.168.1.200:11212");
+            MemcachedClientBuilder builder = new XMemcachedClientBuilder("192.168.1.200:12000");//代理端口
             client = builder.build();
         } catch (IOException e) {
             e.printStackTrace();
